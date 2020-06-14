@@ -18,3 +18,11 @@ car = { wheels: 4, max_speed: 250, color: 'red' }
 2.7.1 :024 > car2 [:color]
  => "green" 
 
+2.7.1 :001 > load 'car.rb'
+ => true 
+2.7.1 :002 > new_car = Car.new
+2.7.1 :003 > new_car
+ => #<Car:0x000055d59186e838 @colour=nil> 
+2.7.1 :004 > new_car = Car.new(colour: 'red')
+2.7.1 :005 > new_car
+ => #<Car:0x000055d591a6a2e0 @colour="red"> 
